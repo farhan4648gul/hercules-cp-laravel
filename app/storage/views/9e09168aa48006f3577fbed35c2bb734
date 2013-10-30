@@ -1,0 +1,14 @@
+
+<?php $__env->startSection('content'); ?>
+	<?php if($users): ?>
+		<table>
+    	<?php foreach($users as $user): ?>
+    		<tr>
+		    	<td><?php echo $user->name; ?></td>
+		    	<td><a href="mailto:<?php echo $user->email; ?>"><?php echo $user->email; ?></a></td>
+	    	</tr>
+	    <?php endforeach; ?>
+	    <table>
+    <?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

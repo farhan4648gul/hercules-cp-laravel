@@ -1,0 +1,169 @@
+[2013-10-23 04:02:58] log.ERROR: exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'laravel'@'localhost' (using password: YES)' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php:47
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php(47): PDO->__construct('mysql:host=loca...', 'laravel', 'laravel', Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\MySqlConnector.php(20): Illuminate\Database\Connectors\Connector->createConnection('mysql:host=loca...', Array, Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connectors\ConnectionFactory.php(41): Illuminate\Database\Connectors\MySqlConnector->connect(Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(128): Illuminate\Database\Connectors\ConnectionFactory->make(Array, 'mysql')
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(64): Illuminate\Database\DatabaseManager->makeConnection('mysql')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(169): Illuminate\Database\DatabaseManager->connection(NULL)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\DatabaseMigrationRepository.php(137): Illuminate\Database\Migrations\DatabaseMigrationRepository->getConnection()
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(370): Illuminate\Database\Migrations\DatabaseMigrationRepository->repositoryExists()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(95): Illuminate\Database\Migrations\Migrator->repositoryExists()
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\MigrateCommand.php(58): Illuminate\Database\Console\Migrations\MigrateCommand->prepareDatabase()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\MigrateCommand->fire()
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\MigrateCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#17 {main} [] []
+[2013-10-23 04:04:04] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '}'' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\migrations\2013_10_23_040054_create_users_table.php:21
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-23 08:08:41] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\migrations\2013_10_23_040054_create_users_table.php:20
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-23 08:14:13] log.ERROR: exception 'ErrorException' with message 'include(C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel/app/database/migrations/2013_10_23_081114_create_users_table.php): failed to open stream: No such file or directory' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php:185
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php(185): Illuminate\Exception\Handler->handleError(2, 'include(C:\User...', 'C:\Users\asanto...', 185, Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php(185): Composer\Autoload\ClassLoader::loadClass()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('CreateUsersTabl...')
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(301): spl_autoload_call('CreateUsersTabl...')
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(194): Illuminate\Database\Migrations\Migrator->resolve('2013_10_23_0400...')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(174): Illuminate\Database\Migrations\Migrator->runDown(Object(stdClass), false)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\ResetCommand.php(56): Illuminate\Database\Migrations\Migrator->rollback(false)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\ResetCommand->fire()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(124): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\RefreshCommand.php(31): Illuminate\Console\Command->call('migrate:reset', Array)
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\RefreshCommand->fire()
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\RefreshCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#19 {main} [] []
+[2013-10-23 08:14:36] log.ERROR: exception 'ErrorException' with message 'include(C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel/app/database/migrations/2013_10_23_081114_create_users_table.php): failed to open stream: No such file or directory' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php:185
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php(185): Illuminate\Exception\Handler->handleError(2, 'include(C:\User...', 'C:\Users\asanto...', 185, Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php(185): Composer\Autoload\ClassLoader::loadClass()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('CreateUsersTabl...')
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(301): spl_autoload_call('CreateUsersTabl...')
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(194): Illuminate\Database\Migrations\Migrator->resolve('2013_10_23_0400...')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(174): Illuminate\Database\Migrations\Migrator->runDown(Object(stdClass), false)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\ResetCommand.php(56): Illuminate\Database\Migrations\Migrator->rollback(false)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\ResetCommand->fire()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\ResetCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#14 {main} [] []
+[2013-10-23 08:15:29] log.ERROR: exception 'ErrorException' with message 'include(C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel/app/database/migrations/2013_10_23_081114_create_users_table.php): failed to open stream: No such file or directory' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php:185
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php(185): Illuminate\Exception\Handler->handleError(2, 'include(C:\User...', 'C:\Users\asanto...', 185, Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\composer\ClassLoader.php(185): Composer\Autoload\ClassLoader::loadClass()
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('CreateUsersTabl...')
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(301): spl_autoload_call('CreateUsersTabl...')
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(194): Illuminate\Database\Migrations\Migrator->resolve('2013_10_23_0400...')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Migrations\Migrator.php(174): Illuminate\Database\Migrations\Migrator->runDown(Object(stdClass), false)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\ResetCommand.php(56): Illuminate\Database\Migrations\Migrator->rollback(false)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\ResetCommand->fire()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\ResetCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#14 {main} [] []
+[2013-10-23 08:47:26] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'username' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(25): Illuminate\Database\Eloquent\Model::create(Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(7): Illuminate\Database\Seeder->call('UserTableSeeder')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(124): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArrayInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\Migrations\RefreshCommand.php(40): Illuminate\Console\Command->call('db:seed', Array)
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\Migrations\RefreshCommand->fire()
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\Migrations\RefreshCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#18 {main} [] []
+[2013-10-23 08:48:32] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'username' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(25): Illuminate\Database\Eloquent\Model::create(Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(7): Illuminate\Database\Seeder->call('UserTableSeeder')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2013-10-23 08:50:49] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'id' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(26): Illuminate\Database\Eloquent\Model::create(Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(7): Illuminate\Database\Seeder->call('UserTableSeeder')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2013-10-23 08:50:57] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'id' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(26): Illuminate\Database\Eloquent\Model::create(Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(7): Illuminate\Database\Seeder->call('UserTableSeeder')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#13 {main} [] []
+[2013-10-23 08:51:49] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'id' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(28): Illuminate\Database\Eloquent\Model::create(Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Seeder.php(38): UserTableSeeder->run()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\database\seeds\DatabaseSeeder.php(7): Illuminate\Database\Seeder->call('UserTableSeeder')
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Console\SeedCommand.php(53): DatabaseSeeder->run()
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(108): Illuminate\Database\Console\SeedCommand->fire()
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(244): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Console\Command.php(96): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(897): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(191): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Database\Console\SeedCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\symfony\console\Symfony\Component\Console\Application.php(121): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\artisan(59): Symfony\Component\Console\Application->run()
+#13 {main} [] []

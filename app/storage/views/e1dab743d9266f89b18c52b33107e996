@@ -1,0 +1,13 @@
+
+<?php $__env->startSection('menu'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('title'); ?>
+	Welcome
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<h1>Hello World!</h1>
+	<p>This is a content</p>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('templates.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,54 @@
+
+<?php $__env->startSection('menu'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('title'); ?>
+	Register
+<?php $__env->stopSection(); ?>
+
+<?php $__env->startSection('content'); ?>
+	<h1>Register</h1>
+	<p>Please fill-in all your information correctly.</p>
+	<?php echo Form::open(array('route' => 'user/register')); ?>
+	<table>
+		<tr>
+			<th>Display Name</th>
+			<td>
+				<?php echo Form::text('name'); ?>
+				<?php echo $errors->first('name', '<p class="error">:message</p>'); ?>
+			</td>
+		</tr>
+		<tr>
+			<th>Username</th>
+			<td>
+				<?php echo Form::text('username'); ?>
+				<?php echo $errors->first('username', '<p class="error">:message</p>'); ?>
+			</td>
+		</tr>
+		<tr>
+			<th>Password</th>
+			<td>
+				<?php echo Form::password('password'); ?>
+				<?php echo $errors->first('password', '<p class="error">:message</p>'); ?>
+			</td>
+		</tr>
+		<tr>
+			<th>Repeat Password</th>
+			<td><?php echo Form::password('password_confirmation'); ?></td>
+		</tr>
+		<tr>
+			<th>Email</th>
+			<td>
+				<?php echo Form::email('email'); ?>
+				<?php echo $errors->first('email', '<p class="error">:message</p>'); ?>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<?php echo Form::submit('Register!'); ?>
+			</td>
+		</tr>
+	</table>
+	<?php echo Form::close(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('/templates.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
