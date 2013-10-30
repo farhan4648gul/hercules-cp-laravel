@@ -1,0 +1,436 @@
+[2013-10-25 06:42:39] log.ERROR: exception 'ErrorException' with message 'call_user_func_array() expects parameter 1 to be a valid callback, no array or string given' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php:80
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleError(2, 'call_user_func_...', 'C:\Users\asanto...', 80, Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(NULL, Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#7 {main} [] []
+[2013-10-25 06:43:51] log.ERROR: exception 'InvalidArgumentException' with message 'View [user.register] not found.' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php:135
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\View\FileViewFinder.php(76): Illuminate\View\FileViewFinder->findInPaths('user.register', Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\View\Environment.php(115): Illuminate\View\FileViewFinder->find('user.register')
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\View\Environment->make('user.register')
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(40): Illuminate\Support\Facades\Facade::__callStatic('make', Array)
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(40): Illuminate\Support\Facades\View::make('user.register')
+#5 [internal function]: UserController->register()
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#9 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#14 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#15 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#16 {main} [] []
+[2013-10-25 06:47:43] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ':', expecting ',' or ';'' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\storage\views\daa2fa55f85b2346d1bc37d1839648f9:14
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 06:47:49] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ':', expecting ',' or ';'' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\storage\views\daa2fa55f85b2346d1bc37d1839648f9:14
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 06:48:35] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ':', expecting ',' or ';'' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\storage\views\daa2fa55f85b2346d1bc37d1839648f9:14
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 06:49:23] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ':', expecting ',' or ';'' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\storage\views\daa2fa55f85b2346d1bc37d1839648f9:14
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 06:54:40] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 06:55:51] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 06:59:24] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 06:59:35] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 06:59:57] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 07:10:12] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ';'' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\storage\views\daa2fa55f85b2346d1bc37d1839648f9:18
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 07:13:28] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'login_username' in 'where clause'' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select * from `...')
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select * from `...', Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(267): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#11 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Support\Manager.php(127): call_user_func_array(Array, Array)
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Support\Manager->__call('attempt', Array)
+#14 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Auth\AuthManager->attempt(Array)
+#15 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(13): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#16 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(13): Illuminate\Support\Facades\Auth::attempt(Array)
+#17 [internal function]: UserController->login()
+#18 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#19 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('login', Array)
+#20 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'login', Array)
+#21 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#22 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#23 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#24 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#25 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#26 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#27 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#28 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'login_username' in 'where clause' (SQL: select * from `users` where `login_username` = ? limit 1) (Bindings: array (
+  0 => 'admin',
+))' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select * from `...', Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select * from `...', Array, Object(Closure))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select * from `...', Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(441): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(132): Illuminate\Database\Eloquent\Builder->getModels(Array)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php(108): Illuminate\Database\Eloquent\Builder->get(Array)
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Auth\EloquentUserProvider.php(63): Illuminate\Database\Eloquent\Builder->first()
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Auth\Guard.php(267): Illuminate\Auth\EloquentUserProvider->retrieveByCredentials(Array)
+#10 [internal function]: Illuminate\Auth\Guard->attempt(Array)
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Support\Manager.php(127): call_user_func_array(Array, Array)
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Support\Manager->__call('attempt', Array)
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(206): Illuminate\Auth\AuthManager->attempt(Array)
+#14 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(13): Illuminate\Support\Facades\Facade::__callStatic('attempt', Array)
+#15 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(13): Illuminate\Support\Facades\Auth::attempt(Array)
+#16 [internal function]: UserController->login()
+#17 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#18 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('login', Array)
+#19 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'login', Array)
+#20 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#21 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#22 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#23 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#24 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#25 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#26 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#27 {main} [] []
+[2013-10-25 07:31:23] log.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel_helloworld.email' doesn't exist' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:272
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(272): PDO->prepare('select count(*)...')
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(521): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select count(*)...', Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select count(*)...', Array)
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1368): Illuminate\Database\Query\Builder->get(Array)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1310): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\DatabasePresenceVerifier.php(57): Illuminate\Database\Query\Builder->count()
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(759): Illuminate\Validation\DatabasePresenceVerifier->getCount('email', 'email', 'a@a.com', NULL, NULL, Array)
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(264): Illuminate\Validation\Validator->validateUnique('email', 'a@a.com', Array, Object(Illuminate\Validation\Validator))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(225): Illuminate\Validation\Validator->validate('email', 'unique:email')
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(239): Illuminate\Validation\Validator->passes()
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(51): Illuminate\Validation\Validator->fails()
+#14 [internal function]: UserController->register()
+#15 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#16 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#17 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#18 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#19 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#20 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#21 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#22 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#23 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#24 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#25 {main}
+
+Next exception 'Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel_helloworld.email' doesn't exist (SQL: select count(*) as aggregate from `email` where `email` = ?) (Bindings: array (
+  0 => 'a@a.com',
+))' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php:556
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(529): Illuminate\Database\Connection->handleQueryException(Object(PDOException), 'select count(*)...', Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Connection.php(277): Illuminate\Database\Connection->run('select count(*)...', Array, Object(Closure))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1027): Illuminate\Database\Connection->select('select count(*)...', Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1017): Illuminate\Database\Query\Builder->runSelect()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1004): Illuminate\Database\Query\Builder->getFresh(Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1368): Illuminate\Database\Query\Builder->get(Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php(1310): Illuminate\Database\Query\Builder->aggregate('count', Array)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\DatabasePresenceVerifier.php(57): Illuminate\Database\Query\Builder->count()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(759): Illuminate\Validation\DatabasePresenceVerifier->getCount('email', 'email', 'a@a.com', NULL, NULL, Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(264): Illuminate\Validation\Validator->validateUnique('email', 'a@a.com', Array, Object(Illuminate\Validation\Validator))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(225): Illuminate\Validation\Validator->validate('email', 'unique:email')
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Validation\Validator.php(239): Illuminate\Validation\Validator->passes()
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(51): Illuminate\Validation\Validator->fails()
+#13 [internal function]: UserController->register()
+#14 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#15 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#16 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#17 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#18 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#19 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#20 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#21 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#22 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#23 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#24 {main} [] []
+[2013-10-25 07:35:04] log.ERROR: exception 'ErrorException' with message 'Undefined variable: messages' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php:46
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(46): Illuminate\Exception\Handler->handleError(8, 'Undefined varia...', 'C:\Users\asanto...', 46, Array)
+#1 [internal function]: UserController->register()
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#5 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#7 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#12 {main} [] []
+[2013-10-25 07:44:36] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message '_token' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(56): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 07:45:28] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message '_token' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(56): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 07:49:33] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message '_token' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(62): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 07:52:04] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message '_token' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(63): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 07:56:29] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'username' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(65): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 07:59:44] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'username' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(65): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 08:00:00] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'username' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(65): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 08:00:11] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'username' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(65): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 08:01:18] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'username' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(65): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 08:04:10] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php:65
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []
+[2013-10-25 08:04:17] log.ERROR: exception 'Illuminate\Database\Eloquent\MassAssignmentException' with message 'username' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php:310
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(237): Illuminate\Database\Eloquent\Model->fill(Array)
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php(375): Illuminate\Database\Eloquent\Model->__construct(Array)
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\controllers\UserController.php(67): Illuminate\Database\Eloquent\Model::create(Array)
+#3 [internal function]: UserController->register()
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(138): call_user_func_array(Array, Array)
+#5 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Controllers\Controller.php(115): Illuminate\Routing\Controllers\Controller->callMethod('register', Array)
+#6 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(985): Illuminate\Routing\Controllers\Controller->callAction(Object(Illuminate\Foundation\Application), Object(Illuminate\Routing\Router), 'register', Array)
+#7 [internal function]: Illuminate\Routing\Router->Illuminate\Routing\{closure}()
+#8 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(80): call_user_func_array(Object(Closure), Array)
+#9 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Route.php(47): Illuminate\Routing\Route->callCallable()
+#10 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1016): Illuminate\Routing\Route->run(Object(Illuminate\Http\Request))
+#11 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#12 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#13 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#14 {main} [] []
+[2013-10-25 08:23:26] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1429
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\ResourceNotFoundException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 08:24:22] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 08:26:17] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 08:26:28] log.ERROR: exception 'Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php:1439
+Stack trace:
+#0 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1050): Illuminate\Routing\Router->handleRoutingException(Object(Symfony\Component\Routing\Exception\MethodNotAllowedException))
+#1 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Routing\Router.php(1014): Illuminate\Routing\Router->findRoute(Object(Illuminate\Http\Request))
+#2 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(574): Illuminate\Routing\Router->dispatch(Object(Illuminate\Http\Request))
+#3 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php(550): Illuminate\Foundation\Application->dispatch(Object(Illuminate\Http\Request))
+#4 C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\public\index.php(49): Illuminate\Foundation\Application->run()
+#5 {main} [] []
+[2013-10-25 08:42:24] log.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Call to a member function getPath() on a non-object' in C:\Users\asanto01\Documents\_WWWROOT_XAMPP\chokoleyt\laravel\app\routes.php:24
+Stack trace:
+#0 [internal function]: Illuminate\Exception\Handler->handleShutdown()
+#1 {main} [] []

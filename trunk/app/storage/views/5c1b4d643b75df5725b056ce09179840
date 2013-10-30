@@ -1,0 +1,3 @@
+<?php $__env->startSection('panel'); ?>
+	<p>Cool!</p>
+<?php $__env->stopSection(); ?>
